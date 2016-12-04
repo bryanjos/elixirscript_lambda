@@ -3,7 +3,9 @@
 This project shows a simple AWS lambda using Elixirscript. Entry point is `main.js` because Lambda does not like names with dots in them.
 
 Lambda Settings:
+
   Runtime: Node.js 4.3
+
   Handler: main.handler
 
 ## Requirements
