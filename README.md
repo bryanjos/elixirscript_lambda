@@ -1,8 +1,10 @@
-# Elixirscript Project Boilerplate
+# Elixirscript Lambda Node Example
 
-This boilerplate is an experimental project structure for an elixirscript frontend project. The structure will probably change over time. When stable this may or may not be included as a feature of the elixirscript cli.
+This project shows a simple AWS lambda using Elixirscript. Entry point is `main.js` because Lambda does not like names with dots in them.
 
-Use gulp and webpack to build and run a dev server.
+Lambda Settings:
+  Runtime: Node.js 4.3
+  Handler: main.handler
 
 ## Requirements
 
@@ -11,4 +13,4 @@ Must have [elixirscript](https://github.com/bryanjos/elixirscript) installed.
 ## Comands
 
 Build: `npm run build` - Build result will be in the `dist` folder
-Dev Server: `npm run server` - Runs the webpack development server
+Package: `npm run package` - Builds, and creates zip file to be uploaded to Lambda

@@ -1,7 +1,12 @@
 defmodule App do
-  @on_js_load :hi
+  require JS
+  JS.import AWS, "aws-sdk"
 
-  def hi() do
-    :console.log("If you are seeing this, it works")
+  def handler(event, context, callback) do
+    S3 = JS.new AWS.S3, []
+    :console.log(event)
+    context.succeed()
+    :console.log("Succeeded")    
+    nil
   end
 end
