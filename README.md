@@ -13,4 +13,5 @@ Must have [elixirscript](https://github.com/bryanjos/elixirscript) installed.
 ## Comands
 
 Build: `npm run build` - Build result will be in the `dist` folder
+
 Package: `npm run package` - Builds, and creates zip file to be uploaded to Lambda
